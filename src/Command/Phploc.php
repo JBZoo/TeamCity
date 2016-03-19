@@ -27,6 +27,50 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class Phploc extends Command
 {
+    private $_colmap = [
+        'directories'                 => 'Directories',
+        'files'                       => 'Files',
+        'loc'                         => 'Lines of Code (LOC)',
+        'ccnByLloc'                   => 'Cyclomatic Complexity / Lines of Code',
+        'cloc'                        => 'Comment Lines of Code (CLOC)',
+        'ncloc'                       => 'Non-Comment Lines of Code (NCLOC)',
+        'lloc'                        => 'Logical Lines of Code (LLOC)',
+        'llocGlobal'                  => 'LLOC outside functions or classes',
+        'namespaces'                  => 'Namespaces',
+        'interfaces'                  => 'Interfaces',
+        'traits'                      => 'Traits',
+        'classes'                     => 'Classes',
+        'abstractClasses'             => 'Abstract Classes',
+        'concreteClasses'             => 'Concrete Classes',
+        'llocClasses'                 => 'Classes Length (LLOC)',
+        'methods'                     => 'Methods',
+        'nonStaticMethods'            => 'Non-Static Methods',
+        'staticMethods'               => 'Static Methods',
+        'publicMethods'               => 'Public Methods',
+        'nonPublicMethods'            => 'Non-Public Methods',
+        'methodCcnAvg'                => 'Cyclomatic Complexity / Number of Methods',
+        'functions'                   => 'Functions',
+        'namedFunctions'              => 'Named Functions',
+        'anonymousFunctions'          => 'Anonymous Functions',
+        'llocFunctions'               => 'Functions Length (LLOC)',
+        'llocByNof'                   => 'Average Function Length (LLOC)',
+        'constants'                   => 'Constants',
+        'globalConstants'             => 'Global Constants',
+        'classConstants'              => 'Class Constants',
+        'attributeAccesses'           => 'Attribute Accesses',
+        'instanceAttributeAccesses'   => 'Non-Static Attribute Accesses',
+        'staticAttributeAccesses'     => 'Static Attribute Accesses',
+        'methodCalls'                 => 'Method Calls',
+        'instanceMethodCalls'         => 'Non-Static Method Calls',
+        'staticMethodCalls'           => 'Static Method Calls',
+        'globalAccesses'              => 'Global Accesses',
+        'globalVariableAccesses'      => 'Global Variable Accesses',
+        'superGlobalVariableAccesses' => 'Super-Global Variable Accesses',
+        'globalConstantAccesses'      => 'Global Constant Accesses',
+        'testClasses'                 => 'Test Classes',
+        'testMethods'                 => 'Test Methods',
+    ];
+
     /**
      * {@inheritdoc}
      */
@@ -56,7 +100,22 @@ class Phploc extends Command
         $fields = (array)$xml;
 
         foreach ($fields as $key => $value) {
-            echo "##teamcity[buildStatisticValue key='phploc_{$key}' value='{$value}']" . PHP_EOL;
+
+            if (isset($this->_colmap[$key])) {
+                $name = $this->_colmap[$key];
+                $this->_tcEcho('(PHPloc) ' . $name, $value);
+            }
+
+            $this->_tcEcho('phploc_' . $key, $value);
         }
+    }
+
+    /**
+     * @param $key
+     * @param $value
+     */
+    protected function _tcEcho($key, $value)
+    {
+        echo "##teamcity[buildStatisticValue key='{$key}' value='{$value}']" . PHP_EOL;
     }
 }
