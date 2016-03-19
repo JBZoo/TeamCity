@@ -28,47 +28,73 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Phploc extends Command
 {
     private $_colmap = [
+
         'directories'                 => 'Directories',
         'files'                       => 'Files',
+
+        // Size
         'loc'                         => 'Lines of Code (LOC)',
-        'ccnByLloc'                   => 'Cyclomatic Complexity / Lines of Code',
         'cloc'                        => 'Comment Lines of Code (CLOC)',
         'ncloc'                       => 'Non-Comment Lines of Code (NCLOC)',
         'lloc'                        => 'Logical Lines of Code (LLOC)',
-        'llocGlobal'                  => 'LLOC outside functions or classes',
-        'namespaces'                  => 'Namespaces',
-        'interfaces'                  => 'Interfaces',
-        'traits'                      => 'Traits',
-        'classes'                     => 'Classes',
-        'abstractClasses'             => 'Abstract Classes',
-        'concreteClasses'             => 'Concrete Classes',
         'llocClasses'                 => 'Classes Length (LLOC)',
-        'methods'                     => 'Methods',
-        'nonStaticMethods'            => 'Non-Static Methods',
-        'staticMethods'               => 'Static Methods',
-        'publicMethods'               => 'Public Methods',
-        'nonPublicMethods'            => 'Non-Public Methods',
-        'methodCcnAvg'                => 'Cyclomatic Complexity / Number of Methods',
-        'functions'                   => 'Functions',
-        'namedFunctions'              => 'Named Functions',
-        'anonymousFunctions'          => 'Anonymous Functions',
+        'classLlocAvg'                => 'Average Class Length',
+        'classLlocMin'                => 'Minimum Class Length',
+        'classLlocMax'                => 'Maximum Class Length',
+        'methodLlocAvg'               => 'Average Method Length',
+        'methodLlocMin'               => 'Minimum Method Length',
+        'methodLlocMax'               => 'Maximum Method Length',
         'llocFunctions'               => 'Functions Length (LLOC)',
         'llocByNof'                   => 'Average Function Length (LLOC)',
-        'constants'                   => 'Constants',
-        'globalConstants'             => 'Global Constants',
-        'classConstants'              => 'Class Constants',
+        'llocGlobal'                  => 'LLOC outside functions or classes',
+
+        // Cyclomatic Complexity
+        'ccnByLloc'                   => 'Average Complexity per LLOC',
+        'classCcnAvg'                 => 'Average Complexity per Class',
+        'classCcnMin'                 => 'Minimum Class Complexity',
+        'classCcnMax'                 => 'Maximum Class Complexity',
+        'methodCcnAvg'                => 'Average Complexity per Method',
+        'methodCcnMin'                => 'Minimum Method Complexity',
+        'methodCcnMax'                => 'Maximum Method Complexity',
+
+        // Dependencies
+        'globalAccesses'              => 'Global Accesses',
+        'globalConstantAccesses'      => 'Global Constant Accesses',
+        'globalVariableAccesses'      => 'Global Variable Accesses',
+        'superGlobalVariableAccesses' => 'Super-Global Variable Accesses',
         'attributeAccesses'           => 'Attribute Accesses',
         'instanceAttributeAccesses'   => 'Non-Static Attribute Accesses',
         'staticAttributeAccesses'     => 'Static Attribute Accesses',
         'methodCalls'                 => 'Method Calls',
         'instanceMethodCalls'         => 'Non-Static Method Calls',
         'staticMethodCalls'           => 'Static Method Calls',
-        'globalAccesses'              => 'Global Accesses',
-        'globalVariableAccesses'      => 'Global Variable Accesses',
-        'superGlobalVariableAccesses' => 'Super-Global Variable Accesses',
-        'globalConstantAccesses'      => 'Global Constant Accesses',
+
+        // Structure
+        'namespaces'                  => 'Namespaces',
+        'interfaces'                  => 'Interfaces',
+        'traits'                      => 'Traits',
+        'classes'                     => 'Classes',
+        'abstractClasses'             => 'Abstract Classes',
+        'concreteClasses'             => 'Concrete Classes',
+        'methods'                     => 'Methods',
+        'nonStaticMethods'            => 'Non-Static Methods',
+        'staticMethods'               => 'Static Methods',
+        'publicMethods'               => 'Public Methods',
+        'nonPublicMethods'            => 'Non-Public Methods',
+        'functions'                   => 'Functions',
+        'namedFunctions'              => 'Named Functions',
+        'anonymousFunctions'          => 'Anonymous Functions',
+        'constants'                   => 'Constants',
+        'globalConstants'             => 'Global Constants',
+        'classConstants'              => 'Class Constants',
+
+        // Tests
         'testClasses'                 => 'Test Classes',
         'testMethods'                 => 'Test Methods',
+
+        // ???
+        'ccn'                         => 'Cyclomatic Complexity ???',
+        'ccnMethods'                  => 'Cyclomatic Complexity Methods ???',
     ];
 
     /**
@@ -81,6 +107,7 @@ class Phploc extends Command
             ->setDescription('Parse phploc file and send it to TeamCity report!')
             ->addOption('xml', null, InputOption::VALUE_REQUIRED, 'Path to phploc xml file', null);
     }
+
 
     /**
      * {@inheritdoc}
@@ -101,12 +128,12 @@ class Phploc extends Command
 
         foreach ($fields as $key => $value) {
 
-            if (isset($this->_colmap[$key])) {
+            if (isset($this->_colmap[$key]) && $this->_colmap[$key]) {
                 $name = $this->_colmap[$key];
-                $this->_tcEcho('(PHPloc) ' . $name, $value);
+                $this->_tcEcho('PHPloc: ' . $name, $value);
+            } else {
+                throw new Exception("{$key}=>{$value} not found name");
             }
-
-            $this->_tcEcho('phploc_' . $key, $value);
         }
     }
 
