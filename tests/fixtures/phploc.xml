@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    JBZoo TeamCity
+
+    This file is part of the JBZoo CCK package.
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
+
+    @package    TeamCity
+    @license    MIT
+    @copyright  Copyright (C) JBZoo.com,  All rights reserved.
+    @link       https://github.com/JBZoo/TeamCity
+-->
+<phploc>
+  <directories>559</directories>
+  <files>2617</files>
+  <loc>360990</loc>
+  <lloc>75183</lloc>
+  <llocClasses>65226</llocClasses>
+  <llocFunctions>3909</llocFunctions>
+  <llocGlobal>6048</llocGlobal>
+  <cloc>119833</cloc>
+  <ccn>19373</ccn>
+  <ccnMethods>18563</ccnMethods>
+  <interfaces>206</interfaces>
+  <traits>8</traits>
+  <classes>2611</classes>
+  <abstractClasses>113</abstractClasses>
+  <concreteClasses>2498</concreteClasses>
+  <functions>1358</functions>
+  <namedFunctions>893</namedFunctions>
+  <anonymousFunctions>465</anonymousFunctions>
+  <methods>14537</methods>
+  <publicMethods>12358</publicMethods>
+  <nonPublicMethods>2179</nonPublicMethods>
+  <nonStaticMethods>13666</nonStaticMethods>
+  <staticMethods>871</staticMethods>
+  <constants>712</constants>
+  <classConstants>572</classConstants>
+  <globalConstants>140</globalConstants>
+  <testClasses>0</testClasses>
+  <testMethods>0</testMethods>
+  <ccnByLloc>0.25767793251134</ccnByLloc>
+  <llocByNof>2.8784977908689</llocByNof>
+  <methodCalls>47319</methodCalls>
+  <staticMethodCalls>3568</staticMethodCalls>
+  <instanceMethodCalls>43751</instanceMethodCalls>
+  <attributeAccesses>17768</attributeAccesses>
+  <staticAttributeAccesses>1036</staticAttributeAccesses>
+  <instanceAttributeAccesses>16732</instanceAttributeAccesses>
+  <globalAccesses>2142</globalAccesses>
+  <globalVariableAccesses>92</globalVariableAccesses>
+  <superGlobalVariableAccesses>199</superGlobalVariableAccesses>
+  <globalConstantAccesses>1851</globalConstantAccesses>
+  <classCcnMin>1</classCcnMin>
+  <classCcnAvg>7.5260361317747</classCcnAvg>
+  <classCcnMax>536</classCcnMax>
+  <classLlocMin>0</classLlocMin>
+  <classLlocAvg>23.105207226355</classLlocAvg>
+  <classLlocMax>1631</classLlocMax>
+  <methodCcnMin>1</methodCcnMin>
+  <methodCcnAvg>2.3439622084441</methodCcnAvg>
+  <methodCcnMax>242</methodCcnMax>
+  <methodLlocMin>0</methodLlocMin>
+  <methodLlocAvg>4.3884706229702</methodLlocAvg>
+  <methodLlocMax>338</methodLlocMax>
+  <namespaces>354</namespaces>
+  <ncloc>241157</ncloc>
+</phploc>

@@ -14,21 +14,22 @@
 
 namespace JBZoo\Console\Command;
 
-use JBZoo\Console\Command;
+use JBZoo\TeamCity\Command as TeamCityCommand;
 use JBZoo\Console\Exception;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class Example
- * @package JBZoo/Console
- * @codeCoverageIgnore
+ * Class Phploc
+ * @package JBZoo\Console
  */
-class Phploc extends Command
+class Phploc extends TeamCityCommand
 {
-    private $_colmap = [
+    protected $_prefix = 'PHPloc';
 
+    protected $_colmap = [
+        // Filesystem
         'directories'                 => 'Directories',
         'files'                       => 'Files',
 
@@ -103,9 +104,9 @@ class Phploc extends Command
     protected function configure() // @codingStandardsIgnoreLine
     {
         $this
-            ->setName('phploc')
+            ->setName('teamcity:phploc')
             ->setDescription('Parse phploc file and send it to TeamCity report!')
-            ->addOption('xml', null, InputOption::VALUE_REQUIRED, 'Path to phploc xml file', null);
+            ->addArgument('xml', InputOption::VALUE_REQUIRED, 'Path to phploc xml file');
     }
 
 
@@ -117,32 +118,14 @@ class Phploc extends Command
     {
         $this->_executePrepare($input, $output);
 
-        $xmlPath = $this->_getOpt('xml');
+        $xmlPath = $input->getArgument('xml');
 
         if (!file_exists($xmlPath)) {
-            throw new Exception('phploc xml file not found!');
+            throw new Exception('XML file not found: ' . $xmlPath);
         }
 
-        $xml    = new \SimpleXMLElement($xmlPath, null, true);
-        $fields = (array)$xml;
+        $xml = new \SimpleXMLElement($xmlPath, null, true);
 
-        foreach ($fields as $key => $value) {
-
-            if (isset($this->_colmap[$key]) && $this->_colmap[$key]) {
-                $name = $this->_colmap[$key];
-                $this->_tcEcho('PHPloc: ' . $name, $value);
-            } else {
-                throw new Exception("{$key}=>{$value} not found name");
-            }
-        }
-    }
-
-    /**
-     * @param $key
-     * @param $value
-     */
-    protected function _tcEcho($key, $value)
-    {
-        echo "##teamcity[buildStatisticValue key='{$key}' value='{$value}']" . PHP_EOL;
+        $this->_printFields((array)$xml);
     }
 }

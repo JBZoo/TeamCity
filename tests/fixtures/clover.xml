@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    JBZoo TeamCity
+
+    This file is part of the JBZoo CCK package.
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
+
+    @package    TeamCity
+    @license    MIT
+    @copyright  Copyright (C) JBZoo.com,  All rights reserved.
+    @link       https://github.com/JBZoo/TeamCity
+-->
+<coverage generated="1458293473">
+  <project timestamp="1458293473">
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/assets-jquery-ui/assets-jquery-ui.php">
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <metrics loc="31" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="9" coveredelements="9"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/assets-jquery/assets-jquery.php">
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <metrics loc="21" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="2" coveredelements="2"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/assets-js-utils/assets-js-utils.php">
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <metrics loc="26" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="3" coveredelements="3"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/assets/assets.php">
+      <line num="55" type="stmt" count="1"/>
+      <metrics loc="57" ncloc="39" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="1" coveredelements="1"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/core/core.php">
+      <line num="24" type="stmt" count="1"/>
+      <metrics loc="26" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="1" coveredelements="1"/>
+    </file>
+    <package name="JBZoo\CCK\Atom\Core\Controller">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/core/src/Controller/Index.php">
+        <class name="Index" namespace="JBZoo\CCK\Atom\Core\Controller" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="index" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <metrics loc="32" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="JBZoo\CCK\Atom\Core">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/core/src/Core.php">
+        <class name="Core" namespace="JBZoo\CCK\Atom\Core" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="29" type="method" name="init" crap="1" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <metrics loc="33" ncloc="12" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="JBZoo\CCK\Atom\Core\Helper">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/core/src/Helper/Debug.php">
+        <class name="Debug" namespace="JBZoo\CCK\Atom\Core\Helper" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="9" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="62" coveredstatements="11" elements="71" coveredelements="13"/>
+        </class>
+        <line num="79" type="method" name="__construct" crap="3" count="1"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="98" type="stmt" count="1"/>
+        <line num="103" type="method" name="sql" crap="30" count="0"/>
+        <line num="105" type="stmt" count="0"/>
+        <line num="106" type="stmt" count="0"/>
+        <line num="107" type="stmt" count="0"/>
+        <line num="109" type="stmt" count="0"/>
+        <line num="112" type="stmt" count="0"/>
+        <line num="124" type="method" name="dump" crap="132" count="0"/>
+        <line num="126" type="stmt" count="0"/>
+        <line num="129" type="stmt" count="0"/>
+        <line num="131" type="stmt" count="0"/>
+        <line num="132" type="stmt" count="0"/>
+        <line num="133" type="stmt" count="0"/>
+        <line num="136" type="stmt" count="0"/>
+        <line num="137" type="stmt" count="0"/>
+        <line num="140" type="stmt" count="0"/>
+        <line num="141" type="stmt" count="0"/>
+        <line num="142" type="stmt" count="0"/>
+        <line num="145" type="stmt" count="0"/>
+        <line num="147" type="stmt" count="0"/>
+        <line num="148" type="stmt" count="0"/>
+        <line num="149" type="stmt" count="0"/>
+        <line num="150" type="stmt" count="0"/>
+        <line num="153" type="stmt" count="0"/>
+        <line num="155" type="stmt" count="0"/>
+        <line num="158" type="stmt" count="0"/>
+        <line num="160" type="stmt" count="0"/>
+        <line num="167" type="method" name="mark" crap="20" count="0"/>
+        <line num="169" type="stmt" count="0"/>
+        <line num="170" type="stmt" count="0"/>
+        <line num="172" type="stmt" count="0"/>
+        <line num="181" type="method" name="log" crap="30" count="0"/>
+        <line num="183" type="stmt" count="0"/>
+        <line num="184" type="stmt" count="0"/>
+        <line num="185" type="stmt" count="0"/>
+        <line num="187" type="stmt" count="0"/>
+        <line num="195" type="method" name="logArray" crap="30" count="0"/>
+        <line num="197" type="stmt" count="0"/>
+        <line num="198" type="stmt" count="0"/>
+        <line num="199" type="stmt" count="0"/>
+        <line num="200" type="stmt" count="0"/>
+        <line num="202" type="stmt" count="0"/>
+        <line num="203" type="stmt" count="0"/>
+        <line num="205" type="stmt" count="0"/>
+        <line num="206" type="stmt" count="0"/>
+        <line num="209" type="stmt" count="0"/>
+        <line num="216" type="method" name="trace" crap="72" count="0"/>
+        <line num="218" type="stmt" count="0"/>
+        <line num="221" type="stmt" count="0"/>
+        <line num="222" type="stmt" count="0"/>
+        <line num="223" type="stmt" count="0"/>
+        <line num="224" type="stmt" count="0"/>
+        <line num="227" type="stmt" count="0"/>
+        <line num="228" type="stmt" count="0"/>
+        <line num="231" type="stmt" count="0"/>
+        <line num="232" type="stmt" count="0"/>
+        <line num="233" type="stmt" count="0"/>
+        <line num="235" type="method" name="anonymous function" crap="2" count="0"/>
+        <line num="240" type="stmt" count="0"/>
+        <line num="242" type="stmt" count="0"/>
+        <line num="244" type="stmt" count="0"/>
+        <line num="245" type="stmt" count="0"/>
+        <line num="248" type="stmt" count="0"/>
+        <line num="253" type="stmt" count="0"/>
+        <line num="254" type="stmt" count="0"/>
+        <line num="256" type="stmt" count="0"/>
+        <line num="259" type="stmt" count="0"/>
+        <line num="266" type="method" name="isShow" crap="1" count="1"/>
+        <line num="268" type="stmt" count="1"/>
+        <line num="269" type="stmt" count="1"/>
+        <metrics loc="271" ncloc="162" classes="1" methods="9" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="11" elements="79" coveredelements="13"/>
+      </file>
+    </package>
+    <package name="JBZoo\CCK\Atom\Test\Controller">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/test/src/Controller/Index.php">
+        <class name="Index" namespace="JBZoo\CCK\Atom\Test\Controller" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="28" type="method" name="checkReturn" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <metrics loc="32" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/test/src/Controller/Other.php">
+        <class name="Other" namespace="JBZoo\CCK\Atom\Test\Controller" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="28" type="method" name="checkEcho" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <metrics loc="32" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+    </package>
+    <package name="JBZoo\CCK\Atom\Test">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/test/src/Core.php">
+        <class name="Test" namespace="JBZoo\CCK\Atom\Test" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="26" ncloc="10" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="JBZoo\CCK\Atom\Test\Helper">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/test/src/Helper/Test.php">
+        <class name="Test" namespace="JBZoo\CCK\Atom\Test\Helper" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="getRand" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <metrics loc="32" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/atoms/test/test.php">
+      <line num="24" type="stmt" count="1"/>
+      <metrics loc="26" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="1" coveredelements="1"/>
+    </file>
+    <package name="JBZoo\CCK">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/App.php">
+        <class name="App" namespace="JBZoo\CCK" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="14" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="90" coveredstatements="81" elements="104" coveredelements="90"/>
+        </class>
+        <line num="34" type="method" name="getInstance" crap="2" count="9"/>
+        <line num="36" type="stmt" count="9"/>
+        <line num="38" type="stmt" count="9"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="9"/>
+        <line num="48" type="method" name="init" crap="3" count="2"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="1"/>
+        <line num="98" type="stmt" count="1"/>
+        <line num="100" type="stmt" count="1"/>
+        <line num="101" type="stmt" count="1"/>
+        <line num="110" type="method" name="trigger" crap="1" count="6"/>
+        <line num="114" type="stmt" count="6"/>
+        <line num="121" type="method" name="error" crap="2" count="0"/>
+        <line num="123" type="stmt" count="0"/>
+        <line num="124" type="stmt" count="0"/>
+        <line num="130" type="method" name="show404" crap="2" count="0"/>
+        <line num="132" type="stmt" count="0"/>
+        <line num="133" type="stmt" count="0"/>
+        <line num="139" type="method" name="mark" crap="6" count="0"/>
+        <line num="141" type="stmt" count="0"/>
+        <line num="142" type="stmt" count="0"/>
+        <line num="144" type="stmt" count="0"/>
+        <line num="151" type="method" name="addLoadPath" crap="3.01" count="2"/>
+        <line num="154" type="stmt" count="2"/>
+        <line num="155" type="stmt" count="2"/>
+        <line num="157" type="stmt" count="2"/>
+        <line num="158" type="stmt" count="2"/>
+        <line num="160" type="stmt" count="2"/>
+        <line num="161" type="stmt" count="0"/>
+        <line num="164" type="stmt" count="2"/>
+        <line num="165" type="stmt" count="2"/>
+        <line num="167" type="stmt" count="2"/>
+        <line num="178" type="method" name="execute" crap="7" count="3"/>
+        <line num="180" type="stmt" count="3"/>
+        <line num="183" type="stmt" count="3"/>
+        <line num="185" type="stmt" count="3"/>
+        <line num="187" type="stmt" count="3"/>
+        <line num="188" type="stmt" count="3"/>
+        <line num="192" type="stmt" count="3"/>
+        <line num="193" type="stmt" count="3"/>
+        <line num="195" type="stmt" count="3"/>
+        <line num="196" type="stmt" count="3"/>
+        <line num="199" type="stmt" count="3"/>
+        <line num="201" type="stmt" count="3"/>
+        <line num="202" type="stmt" count="3"/>
+        <line num="203" type="stmt" count="3"/>
+        <line num="204" type="stmt" count="3"/>
+        <line num="207" type="stmt" count="3"/>
+        <line num="208" type="stmt" count="3"/>
+        <line num="210" type="stmt" count="3"/>
+        <line num="212" type="stmt" count="3"/>
+        <line num="219" type="method" name="isDebug" crap="1" count="1"/>
+        <line num="221" type="stmt" count="1"/>
+        <line num="227" type="method" name="offsetGet" crap="5" count="8"/>
+        <line num="229" type="stmt" count="8"/>
+        <line num="230" type="stmt" count="2"/>
+        <line num="232" type="stmt" count="2"/>
+        <line num="233" type="stmt" count="1"/>
+        <line num="236" type="stmt" count="1"/>
+        <line num="239" type="stmt" count="8"/>
+        <line num="246" type="method" name="_initPaths" crap="1" count="1"/>
+        <line num="249" type="stmt" count="1"/>
+        <line num="250" type="stmt" count="1"/>
+        <line num="251" type="stmt" count="1"/>
+        <line num="252" type="stmt" count="1"/>
+        <line num="253" type="stmt" count="1"/>
+        <line num="256" type="stmt" count="1"/>
+        <line num="260" type="stmt" count="1"/>
+        <line num="261" type="stmt" count="1"/>
+        <line num="266" type="method" name="_initAssets" crap="1" count="1"/>
+        <line num="268" type="stmt" count="1"/>
+        <line num="270" type="method" name="anonymous function" crap="1" count="1"/>
+        <line num="272" type="stmt" count="1"/>
+        <line num="274" type="stmt" count="1"/>
+        <line num="275" type="stmt" count="1"/>
+        <line num="276" type="stmt" count="1"/>
+        <line num="279" type="stmt" count="1"/>
+        <line num="281" type="stmt" count="1"/>
+        <line num="283" type="stmt" count="1"/>
+        <line num="288" type="method" name="_initAtoms" crap="1" count="1"/>
+        <line num="291" type="stmt" count="1"/>
+        <line num="294" type="stmt" count="1"/>
+        <line num="295" type="stmt" count="1"/>
+        <line num="298" type="stmt" count="1"/>
+        <line num="299" type="stmt" count="1"/>
+        <line num="301" type="stmt" count="1"/>
+        <line num="302" type="stmt" count="1"/>
+        <metrics loc="303" ncloc="199" classes="1" methods="14" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="91" coveredstatements="82" elements="105" coveredelements="91"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/AppAware.php">
+        <class name="AppAware" namespace="JBZoo\CCK" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="5" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="2" elements="13" coveredelements="3"/>
+        </class>
+        <line num="31" type="method" name="__construct" crap="1" count="4"/>
+        <line num="33" type="stmt" count="4"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="41" type="method" name="offsetExists" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="51" type="method" name="offsetGet" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="61" type="method" name="offsetSet" crap="2" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="64" type="stmt" count="0"/>
+        <line num="70" type="method" name="offsetUnset" crap="2" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <line num="73" type="stmt" count="0"/>
+        <metrics loc="74" ncloc="33" classes="1" methods="5" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="2" elements="13" coveredelements="3"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Container.php">
+        <class name="Container" namespace="JBZoo\CCK" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="33" type="method" name="__construct" crap="1" count="3"/>
+        <line num="35" type="stmt" count="3"/>
+        <line num="37" type="stmt" count="3"/>
+        <line num="38" type="stmt" count="3"/>
+        <metrics loc="39" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Exception.php">
+        <class name="Exception" namespace="JBZoo\CCK" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="24" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="JBZoo\CCK\Atom">
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Atom/Atom.php">
+        <class name="Atom" namespace="JBZoo\CCK\Atom" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="37" elements="44" coveredelements="44"/>
+        </class>
+        <line num="69" type="method" name="__construct" crap="3" count="3"/>
+        <line num="71" type="stmt" count="3"/>
+        <line num="73" type="stmt" count="3"/>
+        <line num="75" type="stmt" count="3"/>
+        <line num="76" type="stmt" count="3"/>
+        <line num="77" type="stmt" count="3"/>
+        <line num="78" type="stmt" count="3"/>
+        <line num="80" type="stmt" count="3"/>
+        <line num="81" type="stmt" count="3"/>
+        <line num="83" type="stmt" count="3"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="3"/>
+        <line num="88" type="stmt" count="2"/>
+        <line num="90" type="stmt" count="3"/>
+        <line num="113" type="method" name="init" crap="2" count="2"/>
+        <line num="115" type="stmt" count="2"/>
+        <line num="116" type="stmt" count="1"/>
+        <line num="118" type="stmt" count="2"/>
+        <line num="125" type="method" name="getClass" crap="1" count="4"/>
+        <line num="127" type="stmt" count="4"/>
+        <line num="133" type="method" name="getId" crap="1" count="1"/>
+        <line num="135" type="stmt" count="1"/>
+        <line num="145" type="method" name="execute" crap="4" count="3"/>
+        <line num="147" type="stmt" count="3"/>
+        <line num="149" type="stmt" count="3"/>
+        <line num="152" type="stmt" count="3"/>
+        <line num="153" type="stmt" count="3"/>
+        <line num="155" type="stmt" count="3"/>
+        <line num="157" type="stmt" count="3"/>
+        <line num="158" type="stmt" count="3"/>
+        <line num="159" type="stmt" count="3"/>
+        <line num="161" type="stmt" count="3"/>
+        <line num="162" type="stmt" count="3"/>
+        <line num="163" type="stmt" count="3"/>
+        <line num="164" type="stmt" count="3"/>
+        <line num="166" type="stmt" count="3"/>
+        <line num="167" type="stmt" count="3"/>
+        <line num="168" type="stmt" count="3"/>
+        <line num="170" type="stmt" count="3"/>
+        <line num="185" type="method" name="offsetGet" crap="3" count="1"/>
+        <line num="187" type="stmt" count="1"/>
+        <line num="189" type="stmt" count="1"/>
+        <line num="191" type="method" name="anonymous function" crap="1" count="1"/>
+        <line num="192" type="stmt" count="1"/>
+        <line num="196" type="stmt" count="1"/>
+        <metrics loc="198" ncloc="126" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="38" elements="45" coveredelements="45"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Atom/AtomDefault.php">
+        <class name="AtomDefault" namespace="JBZoo\CCK\Atom" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="24" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Atom/Controller.php">
+        <class name="Controller" namespace="JBZoo\CCK\Atom" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="34" type="method" name="setAtom" crap="1" count="3"/>
+        <line num="36" type="stmt" count="3"/>
+        <line num="37" type="stmt" count="3"/>
+        <metrics loc="54" ncloc="26" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Atom/Helper.php">
+        <class name="Helper" namespace="JBZoo\CCK\Atom" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="8" coveredelements="6"/>
+        </class>
+        <line num="40" type="method" name="__construct" crap="1" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="53" type="method" name="getId" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <metrics loc="57" ncloc="27" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="8" coveredelements="6"/>
+      </file>
+      <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/Atom/Manager.php">
+        <class name="Manager" namespace="JBZoo\CCK\Atom" fullPackage="JBZoo" package="JBZoo">
+          <metrics methods="7" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="50" elements="60" coveredelements="54"/>
+        </class>
+        <line num="43" type="method" name="addPath" crap="1" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="54" type="method" name="loadInfo" crap="3" count="2"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="68" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="72" type="stmt" count="2"/>
+        <line num="75" type="stmt" count="1"/>
+        <line num="82" type="method" name="init" crap="3.01" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="98" type="stmt" count="0"/>
+        <line num="104" type="method" name="offsetGet" crap="2" count="7"/>
+        <line num="106" type="stmt" count="7"/>
+        <line num="107" type="stmt" count="3"/>
+        <line num="110" type="stmt" count="7"/>
+        <line num="119" type="method" name="_getInitCallback" crap="4.25" count="3"/>
+        <line num="121" type="stmt" count="3"/>
+        <line num="123" type="stmt" count="3"/>
+        <line num="124" type="stmt" count="0"/>
+        <line num="128" type="stmt" count="3"/>
+        <line num="130" type="method" name="anonymous function" crap="2" count="3"/>
+        <line num="132" type="stmt" count="3"/>
+        <line num="133" type="stmt" count="3"/>
+        <line num="135" type="stmt" count="3"/>
+        <line num="136" type="stmt" count="3"/>
+        <line num="138" type="stmt" count="3"/>
+        <line num="140" type="stmt" count="1"/>
+        <line num="141" type="stmt" count="1"/>
+        <line num="143" type="stmt" count="2"/>
+        <line num="144" type="stmt" count="2"/>
+        <line num="147" type="stmt" count="3"/>
+        <line num="148" type="stmt" count="3"/>
+        <line num="150" type="stmt" count="3"/>
+        <line num="151" type="stmt" count="3"/>
+        <line num="153" type="stmt" count="3"/>
+        <line num="160" type="method" name="_registerAtom" crap="4.01" count="2"/>
+        <line num="162" type="stmt" count="2"/>
+        <line num="164" type="stmt" count="2"/>
+        <line num="165" type="stmt" count="0"/>
+        <line num="167" type="stmt" count="2"/>
+        <line num="168" type="stmt" count="2"/>
+        <line num="171" type="stmt" count="2"/>
+        <line num="173" type="stmt" count="2"/>
+        <line num="176" type="stmt" count="2"/>
+        <line num="177" type="stmt" count="2"/>
+        <line num="180" type="stmt" count="2"/>
+        <line num="182" type="stmt" count="2"/>
+        <metrics loc="183" ncloc="125" classes="1" methods="7" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="51" elements="61" coveredelements="55"/>
+      </file>
+    </package>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/framework/defines.php">
+      <line num="26" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="2"/>
+      <line num="45" type="stmt" count="3"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="3"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="3"/>
+      <line num="55" type="stmt" count="3"/>
+      <line num="82" type="stmt" count="1"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="85" type="stmt" count="1"/>
+      <metrics loc="90" ncloc="52" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="10" elements="12" coveredelements="10"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/init.php">
+      <line num="18" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <metrics loc="40" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="6" coveredelements="6"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/jbzoo/jbzoo.php">
+      <line num="17" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <metrics loc="27" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="W:\projects\git\JBZoo-CCK\public_html\src/joomla-plugins/plg_sys_jbzoocck/jbzoocck.php">
+      <class name="PlgSystemJBZooCCK" namespace="global">
+        <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="17" coveredelements="0"/>
+      </class>
+      <line num="17" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="37" type="method" name="onAfterInitialise" crap="2" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="55" type="method" name="onBeforeCompileHead" crap="2" count="0"/>
+      <line num="56" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="63" type="method" name="onAfterRespond" crap="2" count="0"/>
+      <line num="64" type="stmt" count="0"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="67" type="stmt" count="0"/>
+      <line num="68" type="stmt" count="0"/>
+      <metrics loc="69" ncloc="33" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="20" coveredelements="0"/>
+    </file>
+    <metrics files="26" loc="1827" ncloc="1035" classes="17" methods="54" coveredmethods="29" conditionals="0" coveredconditionals="0" statements="342" coveredstatements="231" elements="396" coveredelements="260"/>
+  </project>
+</coverage>

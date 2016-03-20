@@ -3,7 +3,9 @@
     "type"              : "library",
     "description"       : "Tools for JetBrains TeamCity CI",
     "license"           : "MIT",
-    "keywords"          : ["TeamCity", "CI", "Tools", "Reports"],
+    "keywords"          : [
+        "TeamCity", "CI", "Tools", "Reports", "Clover", "pdepend", "PHP Depend", "phploc", "phpmetrics"
+    ],
     "minimum-stability" : "stable",
     "authors"           : [
         {
@@ -14,10 +16,12 @@
     ],
     "require"           : {
         "php"           : ">=5.4",
-        "jbzoo/console" : "^1.1"
+        "jbzoo/console" : "^1.1",
+        "jbzoo/utils"   : "^1.6.1"
     },
     "require-dev"       : {
-        "jbzoo/phpunit" : "^1.5.1"
+        "jbzoo/phpunit"   : "^1.5.1",
+        "symfony/process" : "^2.8|^3.0"
     },
     "autoload"          : {
         "psr-4" : {
@@ -38,10 +42,17 @@
             "@manifest",
             "@autoload",
             "@phpunit",
+            "@test-bin",
             "@phpmd",
             "@phpcs",
             "@phpcpd",
             "@phploc"
+        ],
+        "test-bin"   : [
+            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:clover      ./tests/fixtures/clover.xml",
+            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:pdepend     ./tests/fixtures/pdepend.xml",
+            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:phploc      ./tests/fixtures/phploc.xml",
+            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:phpmetrics  ./tests/fixtures/phpmetrics.xml"
         ],
         "update-all" : [
             "composer self-update --no-interaction",
