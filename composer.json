@@ -37,37 +37,6 @@
         "optimize-autoloader" : true,
         "bin-dir"             : "bin"
     },
-    "scripts"           : {
-        "test"       : [
-            "@manifest",
-            "@autoload",
-            "@phpunit",
-            "@test-bin",
-            "@phpmd",
-            "@phpcs",
-            "@phpcpd",
-            "@phploc"
-        ],
-        "test-bin"   : [
-            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:clover      ./tests/fixtures/clover.xml",
-            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:pdepend     ./tests/fixtures/pdepend.xml",
-            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:phploc      ./tests/fixtures/phploc.xml",
-            "php ./vendor/jbzoo/console/bin/jbzoo teamcity:phpmetrics  ./tests/fixtures/phpmetrics.xml"
-        ],
-        "update-all" : [
-            "composer self-update --no-interaction",
-            "composer update --no-interaction --optimize-autoloader"
-        ],
-        "git-reset"  : "git reset --hard",
-        "manifest"   : "composer validate --no-interaction",
-        "autoload"   : "composer dump-autoload --optimize --no-interaction",
-        "phpunit"    : "php ./vendor/phpunit/phpunit/phpunit --configuration ./phpunit.xml.dist",
-        "phpmd"      : "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src text ./vendor/jbzoo/misc/phpmd/jbzoo.xml --verbose",
-        "phpcs"      : "php ./vendor/squizlabs/php_codesniffer/scripts/phpcs ./src --standard=./vendor/jbzoo/misc/phpcs/JBZoo/ruleset.xml --report=full",
-        "phpcpd"     : "php ./vendor/sebastian/phpcpd/phpcpd ./src --verbose",
-        "phploc"     : "php ./vendor/phploc/phploc/phploc ./src --verbose",
-        "coveralls"  : "php ./vendor/satooshi/php-coveralls/bin/coveralls --verbose"
-    },
     "support"           : {
         "issues" : "https://github.com/JBZoo/TeamCity/issues"
     }
