@@ -74,15 +74,15 @@ class Clover extends TeamCityCommand
             'CodeCoverageAbsMCovered' => (int)$info['coveredmethods'],
             'CodeCoverageAbsCTotal'   => (int)$info['classes'],
             'CodeCoverageAbsCCovered' => $coveredClasses,
-            'CodeCoverageL'           => $info['elements'] ? $info['coveredelements'] / $info['elements'] * 100 : 0,
-            'CodeCoverageM'           => $info['methods'] ? $info['coveredmethods'] / $info['methods'] * 100 : 0,
-            'CodeCoverageC'           => $info['classes'] ? $coveredClasses / $info['classes'] * 100 : 0,
+            'CodeCoverageL'           => $info['elements'] ? $info['coveredelements'] / ($info['elements'] ?: 1) * 100 : 0,
+            'CodeCoverageM'           => $info['methods'] ? $info['coveredmethods'] / ($info['methods'] ?: 1) * 100 : 0,
+            'CodeCoverageC'           => $info['classes'] ? $coveredClasses / ($info['classes'] ?: 1) * 100 : 0,
             'Files'                   => (int)$info['files'],
             'LinesOfCode'             => (int)$info['loc'],
             'NonCommentLinesOfCode'   => (int)$info['ncloc'],
         );
 
-        $data['CodeCoverageB'] = $info['statements'] ? $info['coveredstatements'] / $info['statements'] * 100 : 0;
+        $data['CodeCoverageB'] = $info['statements'] ? $info['coveredstatements'] / ($info['statements'] ?: 1) * 100 : 0;
 
         if ($crapThreshold) {
             $crapValues = array();
@@ -100,9 +100,9 @@ class Clover extends TeamCityCommand
             $crapTotal       = array_sum($crapValues);
 
             $data['CRAPAmount']  = $crapAmount;
-            $data['CRAPPercent'] = $crapValuesCount ? $crapAmount / $crapValuesCount * 100 : 0;
+            $data['CRAPPercent'] = $crapValuesCount ? $crapAmount / ($crapValuesCount ?: 1) * 100 : 0;
             $data['CRAPTotal']   = $crapTotal;
-            $data['CRAPAverage'] = $crapValuesCount ? $crapTotal / $crapValuesCount : 0;
+            $data['CRAPAverage'] = $crapValuesCount ? $crapTotal / ($crapValuesCount ?: 1) : 0;
             $data['CRAPMaximum'] = max($crapValues);
         }
 
